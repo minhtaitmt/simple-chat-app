@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-name{
+    font-size: 30px;
+    color: black;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-exit{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    font-weight: 500;
+    display: none;
+}
+
+.btn-exit:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.btn-exit{
+    margin-left: 15px;
+}
+
+.user{
+    font-size: 18px;
+}
+
+.chat-container{
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    height: 92vh;
+    display: none;
+}
+.join-screen{
+    height: 92vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/conversation.jpg");
+    background-size: cover;
+}
+
+.join-screen-title-container{
+    width: 30%;
+}
+
+.join-screen-title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.join-input{
+    margin-top: 20px;
+    width: 100%;
+    padding: 4px 5px;
+
+}
+
+.join-btn{
+    margin-top: 15px;
+    padding: 5px 25px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    font-weight: 500;
+}
+
+.join-btn:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.join-form{
+    width: 30%;
+}
+
+.rooms{
+    padding: 0;
+    width: 20%;
+    height: 92vh;
+    background-color: whitesmoke;
+    /* border-right: lightgray 1px solid ; */
+}
+
+.list-room{
+    height: 84vh;
+    overflow: scroll;
+}
+
+.list-room-item{
+    padding: 0px 20px;
+}
+
+.room-name{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.list-room-item:hover{
+    background-color: white;
+    /* border-radius: 15px; */
+    cursor: pointer;
+}
+
+.room-list-title{
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.room-list-title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    /* border-bottom: 1px solid lightgray; */
+    height: 8vh;
+}
+
+.badge{
+    width: fit-content;
+    height: fit-content;
+}
+
+.chat-area{
+    width: 80%;
+    background-color: white;
+    height: 82vh;
+}
+
+.room-header{
+    border-bottom: 1px solid lightgray;
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 10px 0px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 10vh;
+}
+
+.room-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.room-desc{
+    margin: 5px 0 0 0;
+    font-size: 15px;
+}
+
+.room-title {
+    margin: 0px;
+    padding: 0px;
+}
+
+.chatbox{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 71vh;
+}
+
+.chat-item{
+    padding-bottom: 10px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sender{
+    font-size: 13px;
+    color: grey;
+}
+
+.content{
+    max-width: 60%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.me{
+    align-items: flex-end;
+}
+.other{
+    align-items: flex-start;
+}
+
+.content-other{
+    background-color: rgb(233, 233, 233);
+}
+
+.content-me{
+    background-color: #006AFF;
+    color: white;
+}
+
+.mess-form{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px;
+    height: 9vh;
+    align-items: center;
+}
+
+.mess-input{
+    width: 80%;
+    padding: 5px 0px 5px 10px;
+    border-radius: 15px;
+    border: 1px solid darkgrey;
+    background-color: whitesmoke;
+}
+
+.btn-send{
+    margin-left: 5px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: #006AFF;
+    color: white;
+    border: none;
+    border: 1px solid #006AFF;
+}
+
+.btn-send:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #006AFF;
+    
+}
+
+
+.new-user{
+    padding: 10px 0px 20px 0px;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: rgb(94, 94, 94);
+}
+
+
